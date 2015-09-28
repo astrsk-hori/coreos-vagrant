@@ -18,7 +18,8 @@ $share_home = false
 $vm_gui = false
 $vm_memory = 1024
 $vm_cpus = 1
-$shared_folders = {}
+# ホームディレクトリを指す。vagrantは[~/vagrant/coreos]に作成した
+$shared_folders = {'../../' => '/home/core/share'}
 $forwarded_ports = {}
 
 # Attempt to apply the deprecated environment variable NUM_INSTANCES to
